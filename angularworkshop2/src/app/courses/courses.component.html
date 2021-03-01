@@ -1,0 +1,29 @@
+<table class="table" border="2">
+    <tr>
+        <td>Sr.no</td>
+        <td>Course Name</td>
+        <td>Duration</td>
+        <td>Price</td>
+        <td>Conversion</td>
+        <td>Start Date</td>
+        <td>Description</td>
+        <td>Add Category</td>
+        <td>Update Category</td>
+        <td>Remove Category</td>
+
+    </tr>
+    <tr *ngFor="let c of courses">
+      <td>{{c.id}}</td>
+      <td>{{c.name}}</td>
+      <td>{{c.duration}}</td>
+      <td *ngIf="usdinr===true">{{c.price | currency:'INR'}}</td>
+      <td *ngIf="usdinr===false">{{c.price | curconverter | currency: 'USD'}}</td>
+      <button class="btn btn-info"(click)="toggleInrUsd()">Rs | $</button>
+      <td>{{c.startDate | date:'medium'}}</td>    
+      <td>{{c.description}}</td>
+      <td><button class="btn btn-primary">Add</button></td>
+      <td><button class="btn btn-success">Update</button></td>
+      <td><button class="btn btn-danger">Delete</button></td>
+
+    </tr>
+  </table>

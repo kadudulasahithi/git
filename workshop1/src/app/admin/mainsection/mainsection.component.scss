@@ -1,0 +1,37 @@
+main{
+    display:flex;
+    height: 75vh;
+   
+}
+aside{
+    flex: 20%;
+    background-color: #7395ae;
+}
+section{
+    flex: 80%;
+    background-color: #c8d8e4;
+    padding: 10px;
+    column-count: 2;
+
+}
+.navi a {
+    border-bottom: 1px solid #0d172e;
+    border-top: 1px solid #0d172e;
+    color: black;
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 28px 20px;
+    text-decoration: none;
+}
+
+.navi i {
+   color: black;
+}
+
+.navi a:hover {
+    background: #e1eedd;
+    border-left: 5px solid black;
+   
+   
+}

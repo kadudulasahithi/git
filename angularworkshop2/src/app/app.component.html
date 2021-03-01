@@ -1,0 +1,38 @@
+<header>
+  <img src="../../../assets/download.jpg" height="80" width="100">
+  
+  <nav>
+    <div>
+    <button class ="btn btn-primary" routerLink="/home">Home</button>
+    <button class ="btn btn-primary" routerLink="/courses">Courses</button>
+  </div>
+   
+  </nav>
+  <div>
+    <button class="btn btn-secondary">Logout</button>
+  </div>
+  
+
+</header>
+<br>
+
+<!--here component will be rendered based on choice-->
+<router-outlet></router-outlet>
+<br>
+<br>
+<footer >
+  <section class="footer text-center text-black"><br><br>
+      <div class="container">
+          <div class="row d-flex align-items-center flex-column">
+              <div class="col-lg-4 mb-5">
+                  <h3 class="text-uppercase mb-4">Around the Web</h3>
+                  <a class="btn btn-outline-dark mx-1" href="#"><i class="fa fa-facebook"></i></a>
+                  <a class="btn btn-outline-dark mx-1" href="#"><i class="fa fa-twitter"></i></a>
+                  <a class="btn btn-outline-dark mx-1" href="#"><i class="fa fa-linkedin"></i></a>
+                  <a class="btn btn-outline-dark mx-1" href="#"><i class="fa fa-instagram"></i></a>
+                  <h4>@Copyrights 2021. All rights reserved by cybage.com</h4>
+              </div>
+            </div>
+          </div>
+    </section>
+</footer>
